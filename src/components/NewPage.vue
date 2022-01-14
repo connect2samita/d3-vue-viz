@@ -1,12 +1,13 @@
 <template>
   <div class="renderChart">
+    <p>Fill custom values, select type and generate charts</p>
     <form>
       <input type="text" placeholder="x, x, x, x, x" v-model="newDataset">
       <select v-model="chartType">
-        <option value="vertical">Vertical</option>
-        <option value="horizontal">Horizontal</option>
+        <option value="vertical">Vertical Bar Chart</option>
+        <option value="horizontal">Horizontal Bar Chart</option>
       </select>
-      <button type="button" v-on:click="updateDateset()">Prep Bar Chart</button>
+      <button type="button" v-on:click="updateDateset()">Generate</button>
     </form>
     <div class="chart-container">
       <BarChart ref="barChartV" :dataset="dataset" :type="'vertical'" :componentClass="'bar-chart-1'"/>
@@ -32,7 +33,7 @@ export default {
       }
   },
   methods: {
-      updateDateset() {
+    updateDateset() {
       let arr = this.newDataset.split(",");
       arr.forEach( (e, i) => {
         arr[i] = parseInt(e);

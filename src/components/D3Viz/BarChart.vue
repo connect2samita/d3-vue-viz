@@ -101,3 +101,12 @@ export default {
     mounted() {}
 }
 </script>
+
+<style>
+.bar-chart {
+    background: #EEE;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 25px 0;
+}
+</style>
