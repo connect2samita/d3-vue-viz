@@ -1,4 +1,4 @@
-# d3-vue-viz
+# D3 Visualization | Vue ![GitHub followers](https://img.shields.io/github/followers/littlemissbot.svg?style=social)
 
 ## Project setup
 ```

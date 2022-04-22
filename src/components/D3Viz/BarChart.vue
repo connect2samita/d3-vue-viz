@@ -12,7 +12,7 @@ export default {
         horizontalChart: function(dataset) {
             var data = dataset;
             var width = 300;
-            var height = 300;
+            // var height = 300;
             var scaleFactor = 20;
             var barHeight = 30;
 
@@ -37,7 +37,7 @@ export default {
                     return (d * scaleFactor);
                 })
                 .attr("height", barHeight - 10)
-                .attr("fill", function(d, i) {
+                .attr("fill", function(d) {
                     return colors(d);
                 });
 
@@ -53,7 +53,7 @@ export default {
         },
         verticalChart: function(dataset) {
             var data = dataset;
-            var width = 300;
+            // var width = 300;
             var height = 300;
             var scaleFactor = 20;
             var barHeight = 30;
@@ -83,7 +83,7 @@ export default {
                     return d * scaleFactor;
                 })
                 .attr("width", barHeight - 10)
-                .attr("fill", function(d, i) {
+                .attr("fill", function(d) {
                     return colors(d);
                 });
 

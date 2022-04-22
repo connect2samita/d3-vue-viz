@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>D3 Charts using Vue.Js</h1>
+    <h1>D3 Charts using Vue</h1>
     <p><router-link to="/newpage">Go to chart page.</router-link></p>
   </div>
 </template>
