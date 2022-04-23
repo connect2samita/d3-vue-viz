@@ -14,6 +14,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  base: '/d3-visualization-vue',
   mode: 'history',
   routes: routes
 })
